@@ -1,0 +1,14 @@
+[package]
+name = "kiss-graph-2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.74"
+js-sys = "0.3.52"
+web-sys = { version = "0.3.52", features = ["Document", "Element", "HtmlCanvasElement", "WebGlRenderingContext", "Window"] }
